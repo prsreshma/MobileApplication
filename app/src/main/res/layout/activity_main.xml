@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.psaga.mobileapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="375dp"
+        android:layout_marginBottom="64dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cat" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="215dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+        <AutoCompleteTextView
+            android:id="@+id/email"
+            android:layout_width="650px"
+            android:layout_height="125px"
+            android:fontFamily="@font/myriad_pro"
+            android:text="@string/email"
+
+            android:textColor="#6f7f87"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="650px"
+            android:layout_height="100px"
+            android:ems="10"
+            android:fontFamily="@font/myriad_pro"
+            android:inputType="textPassword"
+            android:text="@string/password"
+            android:textColor="#6f7f87" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="400px"
+            android:layout_height="120px"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_button"
+            android:text="@string/up"
+            android:textColor="#FFFFFF"
+            android:textColorLink="@android:color/holo_green_dark" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/in" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="111.24px"
+        android:layout_height="121.453dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="380px"
+        android:layout_height="116dp"
+        android:layout_marginBottom="250dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.807"
+        app:srcCompat="@drawable/title" />
+
+</android.support.constraint.ConstraintLayout>
